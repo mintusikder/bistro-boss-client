@@ -3,7 +3,7 @@ import service from "../../../public/assets/home/chef-service.jpg";
 
 const Bistro = () => {
   return (
-    <div className="relative ">
+    <div className="relative mb-24">
       <img src={service} alt="Chef Service" />
       <div className="absolute top-1/2 w-3/4 h-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-white  p-10 flex flex-col items-center justify-center">
         <h3 className="text-2xl font-bold">Bistro Boss</h3>
