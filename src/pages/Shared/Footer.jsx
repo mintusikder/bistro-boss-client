@@ -15,7 +15,7 @@ const Footer = () => {
         </aside>
 
         <nav>
-          <h6 className="text-2xl font-thin">Follow Us</h6>
+          <h6 >Follow Us</h6>
           <p>Join us on social media</p>
           <div className="grid grid-flow-col gap-4">
             <a>
