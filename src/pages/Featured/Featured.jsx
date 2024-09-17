@@ -4,13 +4,13 @@ import featuredImg from "../../../public/assets/home/featured.jpg";
 import "./Featured.css"
 const Featured = () => {
   return (
-    <div className="featured-bg-img pt-8 my-10">
+    <div className="featured-bg-img pt-8 my-10 bg-fixed">
       <SectionTitle
         subHeading={"From 11:00am to 10:00pm"}
         heading={"ORDER ONLINE"}
       ></SectionTitle>
-      <div className="md:flex justify-center items-center py-20 px-36">
-        <div>
+      <div className="md:flex justify-center items-center md:py-20 md:px-36 py-8 px-16 bg-slate-600 bg-opacity-40">
+        <div >
           <img src={featuredImg} alt="" />
         </div>
         <div className="md:ml-10 text-white">
