@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from 'prop-types';
 const MenuItem = ({ item }) => {
   const { name, recipe, image, price } = item;
   return (
@@ -15,3 +15,12 @@ const MenuItem = ({ item }) => {
 };
 
 export default MenuItem;
+MenuItem.propTypes = {
+    item: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      recipe: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired
+    }).isRequired
+  };
+  
