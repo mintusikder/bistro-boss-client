@@ -6,10 +6,18 @@ const NavBar = () => {
     <>
       <li>
         <NavLink
-          to="/contact"
+          to="/"
           className="hover:text-yellow-400 active:text-yellow-400 focus:text-yellow-400"
         >
-          Contact
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/menu"
+          className="hover:text-yellow-400 active:text-yellow-400 focus:text-yellow-400"
+        >
+          Our Menu
         </NavLink>
       </li>
     </>
@@ -20,7 +28,6 @@ const NavBar = () => {
       <div className="navbar max-w-screen-xl mx-auto text-white fixed z-10 bg-opacity-60 bg-black w-full">
         <div className="navbar-start">
           <div className="dropdown">
-            {/* Mobile Hamburger Menu */}
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,13 +55,13 @@ const NavBar = () => {
           </div>
 
           {/* Logo / Title */}
-          <a
-            href="#"
+          <NavLink
+            to="/"
             className="btn btn-ghost normal-case text-xl flex flex-col justify-between h-full items-start leading-tight"
           >
             <span className="font-bold">BISTRO BOSS</span>
             <span className="font-light text-sm">Restaurant</span>
-          </a>
+          </NavLink>
         </div>
 
         {/* Desktop Navigation */}
